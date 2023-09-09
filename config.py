@@ -21,7 +21,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH", "336c28913a45587a4c10af8cd620b68f")
 
     # Authorized users to use this bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "6515901556").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
     # session name
     TG_USER_SESSION_NAME = os.environ.get("TG_USER_SESSION_NAME", "leo")
